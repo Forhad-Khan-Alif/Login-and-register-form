@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Login and register form">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Forhad Khan">
+    <title>Login And Register Form-Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="hero">
+        <!-- <h1>Login Register Form</h1> -->
+        <div class="form_box">
+            <div class="button_box">
+                <div id="btn"></div>
+                <button type="button" class="toggle_btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle_btn" onclick="register()">Register</button>
+            </div>
+            <div class="social_icons">
+                <a href="https://www.facebook.com/forhadkhanaj/" target="_blank"><img src="./login-reg-img/fb.png" alt="facebook icon image"></a>
+                <a href="https://twitter.com/forhadkhanaj" target="_blank"><img src="./login-reg-img/tw.png" alt="twitter icon image"></a>
+                <a href="https://docs.google.com/document/d/1fanFMpI7V1Z8k-QKnzMvECioyKjH2TT05Bq_r5AKqUk/edit?usp=sharing" target="_blank"><img src="./login-reg-img/gp.png" alt="google icon image"></a>
+            </div>
+            <form id="login" action="" class="input_group">
+                <input type="text" class="input_field" placeholder="User Id" required>
+                <input type="text" class="input_field" placeholder="Enter Password" required>
+                <input type="checkbox" name="" id="" class="check_box"><span>Remember Password</span>
+                <button type="submit" class="submit_btn">Log in</button>
+            </form>
+            <form id="register" action="" class="input_group">
+                <input type="text" class="input_field" placeholder="User Id" required>
+                <input type="email" class="input_field" placeholder="Email Id" required>
+                <input type="text" class="input_field" placeholder="Enter Password" required>
+                <input type="checkbox" name="" id="" class="check_box"><span>I agree to the terms & conditions</span>
+                <button type="submit" class="submit_btn">Register</button>
+            </form>
+        </div>
+
+        <p>Practice By <a href="https://forhadkhan.com/" target="_blank">Forhad Khan</a></p>
+    </div>
+
+
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function register() {
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+
+        function login() {
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        }
+    </script>
+</body>
+
+</html>
